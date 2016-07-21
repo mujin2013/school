@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>学生入口</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="css/base.css"/>
+		<link rel="stylesheet" href="css/register.css"/>
+	</head>
+	<body>
+		<!--页面头部开始-->
+		<header>
+			<div class="head_top">
+				<div class="head_txt comWidth">
+					<span class="tel">客服热线:4000-000-000</span>
+					<span class="attention">关注我们<i class="weibo"></i><i class="weixin"></i></span>
+					<span class="welcome">您好！欢迎来到西部开源技术中心</span>
+					<span class="help">帮助中心</span>
+			 	</div>
+			</div>
+			<div class="head_middle">
+				<div class="logoArea comWidth">
+					<div class="logoBox">
+						<span class="logo"></span>
+					    <span class="logo_txt">享受开源 体验自由</span>
+					</div>
+					<ul class="aboutMe clearfix fr">
+						<li>
+							<i class="envir"></i>
+							<span class="envir_txt">舒适的教学环境</span>
+						</li>
+						<li>
+							<i class="teacher"></i>
+							<span class="teacher_txt">强大的师资力量</span>
+						</li>
+						<li>
+							<i class="exper"></i>
+							<span class="exper_txt">丰富的办学经验</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="head_bottom">
+				<nav class="navList comWidth">
+					<ul class="clearfix">
+						<li class="curSelect" id='0'><a href="../index/index.html">首页</a><i class="upArrow"></i></li>
+						<li id='1'><a href="#">关于开源</a><i></i></li>
+						<li id='2'><a href="#">教育培训</a><i></i></li>
+						<li id='3'><a href="#">学习视频</a><i></i></li>
+						<li id='4'><a href="#">就业招聘</a><i></i></li>
+						<li id='5'><a href="#">考务系统</a><i></i></li>
+						<li id='6'><a href="#">企业技术支持</a><i></i></li>
+						<li id='7'><a href="#">联系我们</a><i></i></li>
+						<li><span class="searchBox"><input type="text" class="search"/><span></li>
+						<li><span class="go">GO</span></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--页面头部结束-->
+		<!-- 用户注册部分开始-->
+		<section>
+			<div class="userRegister">
+				<span>注册账号</span>
+				<form>
+					<ul>
+						<li>
+							<label for="userRegi" class="label-txt">邮箱注册</label>
+							<input type="text" name="userRegi" value="" id="userRegi"/>
+							<span class="hint" id="email_hint"></span>
+						</li>
+						<li>
+							<label for="userName" class="label-txt">昵称</label>
+							<input type="text" name="userName" value="" id="userName" maxlength="6"/>
+							<span  class="hint" id="username_hint"></span>
+						</li>
+						<li>
+							<label for="pwd" class="label-txt">密码</label>
+							<input type="password" name="pwd" value="" id="pwd" maxlength="16"/>
+							<span  class="hint" id="pwd_hint"></span>
+						</li>
+						<li>
+							<label class="label-txt">确认密码</label>
+							<input type="password" name="rePwd" value="" id="rePwd"/>
+							<span  class="hint" id="repwd_hint"></span>
+						</li>
+						<li>
+							<label for="veri" class="label-txt">验证码</label><input type="text" name="veri" value="" id="veri"/><i></i>
+							<span  class="hint veri-hint" id="veri_hint"></span>
+						</li>
+						<li class="forget-hint">
+							<label for="tel" class="label-txt">手机号码</label>
+							<input type="text" name="tel" value="" id="tel"/>
+							<span  class="hint" id="tel_hint"></span>
+							<div class="forgrt-txt">忘记密码时，可通过该手机号码快速找回密码</div>
+						</li>	
+						<li>
+							<input type="text" name="veri" value="" id="veriCode"/>
+							<span id="getVeri">获取短信验证码</span>
+							<span  class="hint" id="telveri_hint"></span>
+						</li>
+						<li class="agree-item">
+							<input type="checkbox" name="isAgree" value="" checked id="is-agree"/>
+							<label for="is-agree">我已阅读并同意相关服务条款和隐私政策</label>
+							<a href="javascript:void(0)" id="showProtocol"></a>
+						</li>
+						<li id="regist-txt">
+							点击注册
+						</li>
+					</ul>
+				</form>
+				<div id="service-txt" class="service-txt">
+					<h2>服务条款</h2>
+					<div class="protocol_text">
+						甲方自愿
+						将合法拥有的资金以资金管理的方式委托给乙方，并由乙方作为受托人按照本协议约定的方
+						式对资金进行经营，以期最大限度获取收益。
+						乙方资金管理
+						乙方将资金用于_____________________________________________。
+						甲方的出资
+						甲方均需以人民币现金的形式出资。乙方需拿租赁协议以及预算方案向甲方申请，甲方认可后把资金打入乙方账户。
+						甲方权利义务
+						甲方有权了解委托资产的管理、使用及收支情况，但在行使该权利以不影响乙方正常管理和运作委托资产为限。甲方应保证其对委托资产，有完全的权利进行处理，且委托资产投入本合同约定的投资领域并不会导致任何法律纠纷。对乙方以及处理资产管理事务的情况和资料负有依法保密义务，未经乙方同意，不得向任何人透露。
+						乙方权利义务
+						乙方在符合有关法律规定的基础上，有权依据本协议约定可以对委托资产进行经营管理，并保障其以诚实信用、谨慎勤勉的原则管理和运用委托资产，保证资金安全。乙方承诺将受委托管理资产定向投资于公司合作的指定项目。
+						收益与分配
+						1、本协议自甲方全额出资的第二个月起，乙方需每月按照 投资总额/24 在扣除相应手续费后支付给甲方指定账户。
+						2、本协议24个月之后甲方享受乙方公司纯利润40 %分红，直至乙方经营关闭为止。
+						税费的承担
+						本协议项下的委托资产承担相应的税费，按照法律、行政法规和国家有关部门的规定办理。
+						退出及清算
+						甲方出资后，不得要求退回出资，除有下列情况之一出现：乙方决定终止委托经营；经甲、乙双方协商一致同意；因行政机关、司法机关或其他国家机关的法律行为，导致本委托资产管理不能正常运营。委托资产的清算人由乙方担任，清算人在本协议终止后，开始进行清算活动，出具清算报告，对委托财产收益进行分配。
+						争议解决方式
+						因本协议而产生或与本协议有关的一切争议，如经友好协商未能解决的，应向乙方所在地人民法院提起诉讼。
+						其他
+						本协议一式两份，甲乙双方各执一份。本协议自甲方投资全部划入乙方开设的指定账户之日起生效。有效期自———年——月——日至————年——月——日止。
+						本协议未尽事宜，由甲乙双方协商解决
+						，也可以签订补充协议作为本协议的组成部分， 与本协议有同等法律效力。
+						甲方：（签章） 乙方：（签章）
+						法定代表人： 法定代表人：
+						年 月 日 年 月 日
+					</div>
+					<i class="arrow"></i>
+					<i class="close" id="close"></i>
+				</div>
+			</div>
+		</section>
+		<!-- 用户注册部分结束-->
+		<!-- 页面底部开始-->
+		<footer>
+			<div class="partner">
+				<div class="comWidth">
+					<dl class="clearfix">
+						<dt>合作企业</dt>
+						<dd><a href="#">百度中国</a></dd>
+						<dd><a href="#">搜狐中国</a></dd>
+						<dd><a href="#">小米国际</a></dd>
+						<dd><a href="#">阿里巴巴</a></dd>
+						<dd><a href="#">华为国际</a></dd>
+						<dd><a href="#">天猫国际</a></dd>
+						<dd><a href="#">京东商城</a></dd>
+					</dl>
+					<span class="morePartner">更多合作企业&gt;</span>
+				</div>
+			</div>
+			<div class="relUs">
+				<div class="relUsBox comWidth clearfix">
+					<div class="bigLogo fl">
+					</div>
+					<div class="relUs-txt-box fl">
+						<p>
+							<span><a href="#">关于开源</a></span>
+							<span><a href="#">教育培训</a></span>
+							<span><a href="#">学习视频</a></span>
+							<span><a href="#">企业技术支持</a></span>
+						</p>
+						<p>地址：西安太白南路181号西部电子社区A座C区506室 联系电话：029-86699937
+						邮箱：westos@vip.com</p>
+						<p>Copyright &copy; 西部开源技术中心 www.westos.org All Rights Reserved 陕ICP备11026152号-13</p>
+					</div>
+					<div class="shaoma fl">
+						<span class="shaoma-txt">扫码有惊喜</span>
+						<span class="shaoma-img"></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 页面底部结束-->
+		<script src="js/getXHR.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/register.js"></script>
+	</body>
+</html>
