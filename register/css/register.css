@@ -1,0 +1,174 @@
+/*未解决的问题：设置滚动条的样式*/
+/*关于用户注册的*/
+section{
+	background:#fefef4;
+}
+.userRegister{
+	position:relative;
+	width:886px;
+	margin:0 auto;
+}
+.userRegister span:first-child{
+	display:block;
+	font:18px/25px 'Microsoft YaHei';
+	padding-left:6px;
+	border-left:#a6b51c solid 3px;
+	color:#727270;
+	margin-bottom:4px;
+}
+form{
+	border-top:#dedfda solid 2px;
+	padding-top:42px;
+}
+.label-txt{
+	display:inline-block;
+	width:144px;
+	height:38px;
+	text-align:right;
+	font:16px/38px 'Microsoft YaHei';
+	color:#41403e;
+}
+form input{
+	border-radius:5px;
+	padding:8px 10px;
+	height:38px;
+	border:#c6c5c0 solid 1px;
+}
+form li{
+	margin-bottom:13px;
+	height:40px;
+}
+#userRegi,#userName,#pwd,#rePwd,#tel{
+	width:302px;
+}
+#veri{
+	width:166px;
+	margin-left:8px;
+}
+label[for="veri"],#veri{
+	position:relative;
+	top:-13px;
+}
+#veri+i{
+	display:inline-block;
+	position:relative;
+	top:2px;
+	width:129px;
+	height:38px;
+	background:url('../images/codey.png') center center no-repeat;
+	background-size:cover;
+	margin-left:6px;
+}
+.forgrt-txt{
+	font:14px/24px 'Microsoft YaHei';
+	text-indent:152px;
+	color:#71706b;
+}
+form .forget-hint{
+	height:64px;
+	margin-bottom:8px;
+}
+input[name="veri"]{
+	margin-left:152px;
+	width:170px;
+}
+#getVeri{
+	display:inline-block;
+	width:124px;
+	height:38px;
+	background:#a6b51c;
+	font:13px/38px 'Microsoft YaHei';
+	text-align:center;
+	color:#FFF;
+	cursor:pointer;
+	border-radius:5px;
+}
+.agree-item{
+	margin-left:152px;
+}
+label[for="is-agree"]{
+	position:relative;
+	top:-15px;
+	color:#10100e;
+	font:14px/40px 'Microsoft YaHei';
+}
+label[for="is-agree"]+a{
+	display:inline-block;
+	width:21px;
+	height:40px;
+	background:url('../images/showItem_03.gif') center center no-repeat;
+	background-size:contain;
+}
+#regist-txt{
+	width:302px;
+	height:52px;
+	background:#a6b51c;
+	text-align:center;
+	font:24px/52px 'Microsoft YaHei';
+	margin:0 0 226px 152px;
+	color:#FFF;
+	border-radius:5px;
+	cursor:pointer;
+}
+.hint{
+	font:12px/40px 'Microsoft YaHei';
+	color:#aaa;
+}
+.redTxt{
+	color:#ff6162;
+}
+.greenTxt{
+	color:#19FF19;
+}
+.veri-hint{
+	position:relative;
+	top:-12px;
+}
+/*关于服务条款*/
+.service-txt{
+	position:absolute;
+	top:75px;
+	left:490px;
+	width:395px;
+	height:493px;
+	border:#afafaf solid 1px;
+	box-shadow:inset 0 0  30px #efefef;
+	padding:6px 17px 10px 17px;
+	border-radius:5px;
+	background:#FFF;
+	opacity:0;
+}
+#service-txt h2:first-of-type{
+	text-align:center;
+	font:22px/52px 'Microsoft YaHei';
+	color:#0c0c0c;
+}
+.protocol_text{
+	font:12px/22px 'Microsoft YaHei';
+	width:100%;
+	height:420px;
+	overflow-y:auto;
+	color:#2c2c2c;
+	text-align:justify;/*用于调整左右对齐的*/
+}
+.service-txt i{
+	display:block;
+}
+.arrow{
+	position:absolute;
+	bottom:68px;
+	left:-37px;
+	width:37px;
+	height:30px;
+	background:url('../images/arrow_03.gif') center center no-repeat;
+}
+.close{
+	display:block;
+	position:absolute;
+	width:40px;
+	height:40px;
+	right:-15px;
+	top:-15px;
+	background:#A6B51C url('../images/close.png') center center no-repeat; 
+	cursor:pointer;
+}
